@@ -42,13 +42,13 @@ describe('Teste de calculadora', () => {
 
     it('Operação de div', () => {
         let resultado = calculadora.div(3,2);
-        expect(resultado).toEqual(1);
+        expect(resultado).toEqual( 1.5);
 
         resultado = calculadora.div(-1,2);
-        expect(resultado).toEqual(-3);
+        expect(resultado).toEqual(-0.5);
 
         resultado = calculadora.div(0,2);
-        expect(resultado).toEqual(-2);
+        expect(resultado).toEqual( 0);
 
         resultado = () => calculadora.div("a",2);
         expect(resultado).toThrow('Não é um numero');
@@ -57,28 +57,28 @@ describe('Teste de calculadora', () => {
         expect(resultado).toThrow('Não é um numero');
 
         resultado = calculadora.div(-1,-2);
-        expect(resultado).toEqual(1);
+        expect(resultado).toEqual( 0.5);
 
         resultado = calculadora.div(8,2,0,2);
-        expect(resultado).toEqual(6);
+        expect(resultado).toEqual(4);
 
         resultado = calculadora.div(8,-2);
-        expect(resultado).toEqual(10);
+        expect(resultado).toEqual(-4);
 
         resultado = calculadora.div(0,7,3);
-        expect(resultado).toEqual(-7);
+        expect(resultado).toEqual( 0);
     })
 
 
     it('Operação de mult', () => {
         let resultado = calculadora.mult(3,2);
-        expect(resultado).toEqual(1);
+        expect(resultado).toEqual(6);
 
         resultado = calculadora.mult(-1,2);
-        expect(resultado).toEqual(-3);
+        expect(resultado).toEqual(-2);
 
         resultado = calculadora.mult(0,2);
-        expect(resultado).toEqual(-2);
+        expect(resultado).toEqual( 0);
 
         resultado = () => calculadora.mult("a",2);
         expect(resultado).toThrow('Não é um numero');
@@ -87,25 +87,25 @@ describe('Teste de calculadora', () => {
         expect(resultado).toThrow('Não é um numero');
 
         resultado = calculadora.mult(-1,-2);
-        expect(resultado).toEqual(1);
+        expect(resultado).toEqual( 2);
 
         resultado = calculadora.mult(8,2,0,2);
-        expect(resultado).toEqual(6);
+        expect(resultado).toEqual(16);
 
         resultado = calculadora.mult(8,-2);
-        expect(resultado).toEqual(10);
+        expect(resultado).toEqual(-16);
 
     })
 
     it('Operação de Matchpow', () => {
         let resultado = calculadora.Matchpow(3,2);
-        expect(resultado).toEqual(9);
+        expect(resultado).toEqual(   1);
 
         resultado = calculadora.Matchpow(-1,2);
-        expect(resultado).toEqual(1);
+        expect(resultado).toEqual( -3);
 
         resultado = calculadora.Matchpow(0,2);
-        expect(resultado).toEqual(0);
+        expect(resultado).toEqual(2);
 
         resultado = () => calculadora.Matchpow("a",2);
         expect(resultado).toThrow('Não é um numero');
@@ -117,25 +117,25 @@ describe('Teste de calculadora', () => {
         expect(resultado).toEqual(1);
 
         resultado = calculadora.Matchpow(8,2,0,2);
-        expect(resultado).toEqual(64);
+        expect(resultado).toEqual(10);
 
         resultado = calculadora.Matchpow(8,-2);
-        expect(resultado).toEqual(0.015625);
+        expect(resultado).toEqual(-10);
 
         resultado = calculadora.Matchpow(0,7,3);
-        expect(resultado).toEqual(0);
+        expect(resultado).toEqual( 7);
     })
 
     
     it('Operação de Matchsqrt', () => {
         let resultado = calculadora.Matchsqrt(3,2);
-        expect(resultado).toEqual(6);
+        expect(resultado).toEqual(1.4142135623730951);
 
         resultado = calculadora.Matchsqrt(-1,2);
-        expect(resultado).toEqual(-2);
+        expect(resultado).toEqual(1.4142135623730951);
 
         resultado = calculadora.Matchsqrt(0,2);
-        expect(resultado).toEqual(0);
+        expect(resultado).toEqual(1.4142135623730951);
 
         resultado = () => calculadora.Matchsqrt("a",2);
         expect(resultado).toThrow('Não é um numero');
@@ -147,13 +147,13 @@ describe('Teste de calculadora', () => {
         expect(resultado).toEqual(1);
 
         resultado = calculadora.Matchpow(8,2,0,2);
-        expect(resultado).toEqual(64);
+        expect(resultado).toEqual(10);
 
         resultado = calculadora.Matchpow(8,-2);
-        expect(resultado).toEqual(0.015625);
+        expect(resultado).toEqual( -10);
 
         resultado = calculadora.Matchpow(0,7,3);
-        expect(resultado).toEqual(0);
+        expect(resultado).toEqual( 7);
     })
 
     

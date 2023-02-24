@@ -25,7 +25,7 @@ function div(num1, num2) {
     if(isNaN(num1) || isNaN(num2)) {
         throw 'Não é um numero'
     }
-    return num1 - num2
+    return num1 / num2
 }
 
 module.exports = {
@@ -38,7 +38,7 @@ function mult(num1, num2) {
     if(isNaN(num1) || isNaN(num2)) {
         throw 'Não é um numero'
     }
-    return num1 - num2
+    return num1 * num2
 }
 
 module.exports = {
@@ -52,7 +52,7 @@ function Matchpow(num1, num2) {
     if(isNaN(num1) || isNaN(num2)) {
         throw 'Não é um numero'
     }
-    return num1 ** num2
+    return num1 ^ num2
 }
 
 module.exports = {
@@ -67,8 +67,7 @@ function Matchsqrt(num1, num2) {
     if(isNaN(num1) || isNaN(num2)) {
         throw 'Não é um numero'
     }
-    return num1 * num2
-}
+     return num1 = Math.sqrt(num2)}
 
 module.exports = {
     sum,
