@@ -59,13 +59,13 @@ describe('Teste de calculadora', () => {
         resultado = calculadora.div(-1,-2);
         expect(resultado).toEqual( 0.5);
 
-        resultado = calculadora.div(8,2,0,2);
+        resultado = calculadora.div(8.2,0.2);
         expect(resultado).toEqual(4);
 
         resultado = calculadora.div(8,-2);
         expect(resultado).toEqual(-4);
 
-        resultado = calculadora.div(0,7,3);
+        resultado = calculadora.div(0.7,3);
         expect(resultado).toEqual( 0);
     })
 
@@ -89,7 +89,7 @@ describe('Teste de calculadora', () => {
         resultado = calculadora.mult(-1,-2);
         expect(resultado).toEqual( 2);
 
-        resultado = calculadora.mult(8,2,0,2);
+        resultado = calculadora.mult(8.2,0.2);
         expect(resultado).toEqual(16);
 
         resultado = calculadora.mult(8,-2);
@@ -116,43 +116,43 @@ describe('Teste de calculadora', () => {
         resultado = calculadora.Matchpow(-1,-2);
         expect(resultado).toEqual(1);
 
-        resultado = calculadora.Matchpow(8,2,0,2);
+        resultado = calculadora.Matchpow(8.2,0.2);
         expect(resultado).toEqual(10);
 
         resultado = calculadora.Matchpow(8,-2);
         expect(resultado).toEqual(-10);
 
-        resultado = calculadora.Matchpow(0,7,3);
+        resultado = calculadora.Matchpow(0.7,3);
         expect(resultado).toEqual( 7);
     })
 
     
     it('Operação de Matchsqrt', () => {
-        let resultado = calculadora.Matchsqrt(3,2);
+        let resultado = calculadora.Matchsqrt(3);
         expect(resultado).toEqual(1.4142135623730951);
 
-        resultado = calculadora.Matchsqrt(-1,2);
+        resultado = calculadora.Matchsqrt(-1);
         expect(resultado).toEqual(1.4142135623730951);
 
-        resultado = calculadora.Matchsqrt(0,2);
+        resultado = calculadora.Matchsqrt(0);
         expect(resultado).toEqual(1.4142135623730951);
 
-        resultado = () => calculadora.Matchsqrt("a",2);
+        resultado = () => calculadora.Matchsqrt("a");
         expect(resultado).toThrow('Não é um numero');
 
-        resultado = () => calculadora.Matchsqrt(2, "a");
+        resultado = () => calculadora.Matchsqrt(2);
         expect(resultado).toThrow('Não é um numero');
 
         resultado = calculadora.Matchpow(-1,-2);
         expect(resultado).toEqual(1);
 
-        resultado = calculadora.Matchpow(8,2,0,2);
+        resultado = calculadora.Matchpow(8);
         expect(resultado).toEqual(10);
 
-        resultado = calculadora.Matchpow(8,-2);
+        resultado = calculadora.Matchpow(8);
         expect(resultado).toEqual( -10);
 
-        resultado = calculadora.Matchpow(0,7,3);
+        resultado = calculadora.Matchpow(0);
         expect(resultado).toEqual( 7);
     })
 
