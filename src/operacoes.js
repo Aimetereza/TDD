@@ -11,7 +11,7 @@ function sub(num1, num2) {
     if(isNaN(num1) || isNaN(num2)) {
         throw 'Não é um numero'
     }
-    return num1 - num2
+    return num1 + num2
 }
 
 
